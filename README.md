@@ -1,2 +1,56 @@
-# amioo-life-ledger
-Amioo 生活帳本 — Traditional Chinese expense tracker with pet-inspired UI, monthly reports, Chart.js and editable description presets. Teaching and review project.
+# Amioo 生活帳本 · Life Ledger
+
+繁體中文記帳教學專案，使用 Amioo 暖棕與奶油白風格、品牌標誌與寵物照片。
+
+**[開啟線上示範](https://daily-ledger-tw-1028.wilson562133.chatgpt.site/)**
+
+## 功能
+
+- 收入與支出新增、編輯及刪除
+- 常用描述下拉選單，支援自行修改
+- 依描述關鍵字建議分類，可手動調整
+- 月度收入、支出、結餘與 Chart.js 圓餅圖
+- 搜尋、收支篩選與 CSV 匯出
+- 大字體、高對比文字、較大的輸入欄位與按鈕
+- 瀏覽器 localStorage 儲存與響應式排版
+
+## 本機執行
+
+此專案不需要安裝 npm 套件或編譯。使用任一靜態 HTTP 伺服器提供儲存庫根目錄即可。
+例如已安裝 Python 時，可執行 `python -m http.server 8000`，再開啟 `http://localhost:8000`。
+Chart.js 透過 jsDelivr CDN 載入，需要網路連線。
+
+## 審閱建議
+
+請使用示範資料或虛構內容試用，並透過 GitHub Issues 提出意見：
+
+1. 字體、對比、按鈕是否清楚且方便操作？
+2. 選擇「貓咪飼料」是否自動填入描述並建議「寵物」分類？
+3. 月份切換、搜尋、編輯、刪除與 CSV 匯出是否符合預期？
+4. 不同螢幕寬度是否出現重疊或難以操作的欄位？
+
+回報時請附上操作步驟、預期結果、實際結果與螢幕尺寸。
+
+## 檔案結構
+
+| 檔案 | 用途 |
+| --- | --- |
+| `index.html` | 網站結構與表單 |
+| `app.js` | 記帳、分類、統計、圖表與匯出 |
+| `description-menu.js` | 常用描述選單與自動填入 |
+| `style.css` | 基礎樣式 |
+| `amioo.css` | Amioo 視覺樣式 |
+| `readable.css` | 字體、對比與操作尺寸調整 |
+| `assets/` | Amioo 品牌標誌與貓狗照片 |
+
+## 資料與限制
+
+交易資料僅保存在使用者目前瀏覽器，不會上傳 GitHub，也不會在團隊成員間同步。
+清除瀏覽器網站資料會移除紀錄，請定期匯出 CSV。
+目前沒有登入、雲端備份或共同帳本；自動分類採用關鍵字規則。
+
+已通過 JavaScript 語法、初始化與四種分類情境檢查，並於瀏覽器確認圖片顯示及「貓咪飼料 → 寵物」的選單流程。尚未完成所有功能與裝置的完整測試。
+
+## 圖像來源
+
+Amioo 品牌標誌與貓狗照片來源為 [Amioo 官方網站](https://www.amioopet.com/)，保留原有權利；此專案作教學與審閱用途。
