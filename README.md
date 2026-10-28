@@ -2,7 +2,7 @@
 
 繁體中文記帳教學專案，使用 Amioo 暖棕與奶油白風格、品牌標誌與寵物照片。
 
-**[開啟線上示範](https://daily-ledger-tw-1028.wilson562133.chatgpt.site/)**
+**[開啟線上示範](https://stigs0802.github.io/amioo-life-ledger/)**
 
 ## 功能
 
